@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/bot.js",
+    "start:dev": "nodemon bin/bot.js",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "yarn run lint -- --fix",
     "test": "yarn run lint"
@@ -21,5 +22,8 @@
     "eslint-plugin-import": "^2.0.1",
     "slackbots": "^0.5.3",
     "sqlite3": "^3.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
