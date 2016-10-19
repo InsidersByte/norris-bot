@@ -1,0 +1,25 @@
+{
+  "name": "norris-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/bot.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "yarn run lint -- --fix",
+    "test": "yarn run lint"
+  },
+  "repository": {
+    "url": "https://insidersbyte@github.com/InsidersByte/norris-bot.git",
+    "type": "git"
+  },
+  "author": "Jonathon Kelly <jonathon@insidersbyte.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "2.0.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "slackbots": "^0.5.3",
+    "sqlite3": "^3.1.6"
+  }
+}
